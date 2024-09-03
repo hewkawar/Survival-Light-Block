@@ -1,0 +1,37 @@
+{
+	"schemaVersion": 1,
+	"id": "survival-light-block",
+	"version": "${version}",
+	"name": "Survival Light Block",
+	"description": "This is an example description! Tell everyone what your mod is about!",
+	"authors": [
+		"Me!"
+	],
+	"contact": {
+		"homepage": "https://fabricmc.net/",
+		"sources": "https://github.com/FabricMC/fabric-example-mod"
+	},
+	"license": "CC0-1.0",
+	"icon": "assets/survival-light-block/icon.png",
+	"environment": "*",
+	"entrypoints": {
+		"main": [
+			"xyz.hewkawar.survival_light_block.SurvivalLightBlock"
+		],
+		"client": [
+			"xyz.hewkawar.survival_light_block.SurvivalLightBlockClient"
+		]
+	},
+	"mixins": [
+		"survival-light-block.mixins.json"
+	],
+	"depends": {
+		"fabricloader": ">=0.16.3",
+		"minecraft": "~1.18",
+		"java": ">=17",
+		"fabric": "*"
+	},
+	"suggests": {
+		"another-mod": "*"
+	}
+}

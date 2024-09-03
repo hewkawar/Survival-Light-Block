@@ -1,0 +1,6 @@
+{
+  "key.categories.survival-light-block": "Survival Light Block",
+  "key.survival-light-block.toggle_light_block": "Toggle Light Block",
+  "config.survival-light-block.toggle_light_block_false": "Show Light Block Off",
+  "config.survival-light-block.toggle_light_block_true": "Show Light Block On"
+}
