@@ -49,6 +49,7 @@ dependencies {
 	}
 
 	modImplementation "maven.modrinth:modmenu:${project.modmenu_version}"
+	modImplementation "maven.modrinth:placeholder-api:${project.placeholder_api}"
 }
 
 processResources {
