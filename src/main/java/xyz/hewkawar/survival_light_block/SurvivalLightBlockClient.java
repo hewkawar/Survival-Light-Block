@@ -3,13 +3,11 @@ package xyz.hewkawar.survival_light_block;
 import com.google.gson.Gson;
 import com.google.gson.GsonBuilder;
 import com.mojang.blaze3d.platform.InputConstants;
-import com.mojang.brigadier.LiteralMessage;
 import net.fabricmc.api.ClientModInitializer;
 import net.fabricmc.fabric.api.client.event.lifecycle.v1.ClientTickEvents;
 import net.fabricmc.fabric.api.client.keybinding.v1.KeyBindingHelper;
 import net.minecraft.client.KeyMapping;
 import net.minecraft.network.chat.Component;
-import net.minecraft.network.chat.TranslatableComponent;
 import org.lwjgl.glfw.GLFW;
 
 import java.io.IOException;
@@ -26,7 +24,6 @@ public class SurvivalLightBlockClient implements ClientModInitializer {
 
     @Override
     public void onInitializeClient() {
-        // Client-side initialization
         ModKeyBindings.register();
 
         ClientTickEvents.END_CLIENT_TICK.register(client -> {
@@ -34,9 +31,7 @@ public class SurvivalLightBlockClient implements ClientModInitializer {
             if (isKeyDown && !wasKeyDown) {
                 ModConfig.toggleLightBlockOption();
                 if (client.player != null) {
-                    client.player.displayClientMessage(
-                            new TranslatableComponent("config." + MOD_ID + ".toggle_light_block_" + ModConfig.getToggleLightBlockOption()),true
-                    );
+                    client.player.displayClientMessage(Component.translatable("config." + MOD_ID + ".toggle_light_block_" + ModConfig.getToggleLightBlockOption()),true);
                 }
             }
             wasKeyDown = isKeyDown;
