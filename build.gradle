@@ -30,7 +30,7 @@ repositories {
 	}
 }
 
-def sodium = true
+def sodium = false
 
 dependencies {
 	// To change the versions see the gradle.properties file
