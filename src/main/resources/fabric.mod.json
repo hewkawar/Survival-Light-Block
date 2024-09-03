@@ -3,15 +3,15 @@
 	"id": "survival-light-block",
 	"version": "${version}",
 	"name": "Survival Light Block",
-	"description": "This is an example description! Tell everyone what your mod is about!",
+	"description": "Use Light Block in survival mode",
 	"authors": [
-		"Me!"
+		"HewkawAr"
 	],
 	"contact": {
-		"homepage": "https://fabricmc.net/",
-		"sources": "https://github.com/FabricMC/fabric-example-mod"
+		"homepage": "https://modrinth.com/project/survival-light-block",
+		"sources": "https://github.com/hewkawar/Survival-Light-Block"
 	},
-	"license": "CC0-1.0",
+	"license": "MIT",
 	"icon": "assets/survival-light-block/icon.png",
 	"environment": "*",
 	"entrypoints": {
