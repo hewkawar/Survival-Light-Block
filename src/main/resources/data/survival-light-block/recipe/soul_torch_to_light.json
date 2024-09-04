@@ -1,0 +1,12 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "minecraft:soul_torch"
+    }
+  ],
+  "result": {
+    "id": "minecraft:light",
+    "count": 1
+  }
+}
